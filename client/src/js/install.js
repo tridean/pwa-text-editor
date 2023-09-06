@@ -1,8 +1,6 @@
 const butInstall = document.getElementById('buttonInstall');
 
-/* Here we need to provide the logic for when and how to install the PWA.  */
-
-//  Keep this code as-is
+// Keep this code as-is
 window.addEventListener('beforeinstallprompt', (event) => {
   window.deferredPrompt = event;
   butInstall.classList.toggle('hidden', false);
@@ -18,12 +16,14 @@ butInstall.addEventListener('click', async () => {
 
   promptEvent.prompt();
 
-  // TODO: Notice line 7 above.  window.deferredPrompt should now be set to null.
+  // Set window.deferredPrompt to null after prompting the user to install.
+  window.deferredPrompt = null;
 
-  // TODO: Notice line 8 above. We want the same line here, but the hidden value should be set to true.
-  // Insert line here
+  // Hide the install button after prompting.
+  butInstall.classList.toggle('hidden', true);
 });
 
 window.addEventListener('appinstalled', (event) => {
+  // Reset window.deferredPrompt when the app is successfully installed.
   window.deferredPrompt = null;
 });
