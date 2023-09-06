@@ -3,7 +3,7 @@
   ## Description
   A simple text editor application to be run in browser. Installable PWA so that text persists.
   ## Deployed Application URL
-  [ https://github.com/tridean/svg-logo-generator](https://pwa-text-editor99-a763eb7a25e2.herokuapp.com/)
+  [https://pwa-text-editor99-a763eb7a25e2.herokuapp.com/](https://pwa-text-editor99-a763eb7a25e2.herokuapp.com/)
   ## Screenshot
   ![screenshot](./assets/screenshot.png)
   ## Table of Contents
